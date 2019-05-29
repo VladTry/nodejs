@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+
+<div class="container">
+    <% if (data.length > 0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <td class="short">Ім'я дірочки</td>
+                    <td class="long">Як себе дірочка почуває</td>
+                </tr>
+            </thead>
+                <% for (let i = 0; i < data.length; i++) { %>
+                    <tr>
+                        <td class="long"><%= data[i].holeName %></td>
+                        <td class="short"><%= data[i].holeStatus %></td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    <% } else { %>
+    <p>Data no length</p>
+    <% } %>
+</div>
+
+</body>
+</html>

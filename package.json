@@ -1,0 +1,24 @@
+{
+  "name": "cloudlab2",
+  "description": "",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "author": "DimonChico",
+  "engines": {
+    "node": ">=8",
+    "npm": "^6.0.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-myconnection": "^1.0.4",
+    "mysql": "^2.16.0",
+    "request": "^2.85.0"
+  }
+}

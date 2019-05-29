@@ -2,5 +2,5 @@ FROM node:8
 WORKDIR /app
 COPY package.json /app
 COPY . /app
-CMD node server.js
+CMD node app.js
 EXPOSE 8080
